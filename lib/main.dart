@@ -34,7 +34,11 @@ class HomePage extends StatelessWidget {
         return Scaffold(
           appBar: AppBar(
             backgroundColor: Colors.orange,
-            title: const Text("Points Counter"),
+            title: const Text(
+              "Points Counter",
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            centerTitle: true,
           ),
           body: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -56,7 +60,7 @@ class HomePage extends StatelessWidget {
                       Text(
                         '${BlocProvider.of<CounterCubit>(context).teamAPoints}',
                         style: const TextStyle(
-                          fontSize: 170,
+                          fontSize: 100,
                         ),
                       ),
                       ElevatedButton(
@@ -137,7 +141,7 @@ class HomePage extends StatelessWidget {
                       Text(
                         '${BlocProvider.of<CounterCubit>(context).teamBPoints}',
                         style: const TextStyle(
-                          fontSize: 170,
+                          fontSize: 100,
                         ),
                       ),
                       ElevatedButton(

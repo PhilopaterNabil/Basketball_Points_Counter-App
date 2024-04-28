@@ -35,7 +35,7 @@ class HomeViewBody extends StatelessWidget {
             const Spacer(),
             CustomResetButtonView(
               onPressed: () {
-                BlocProvider.of<CounterCubit>(context).TeamsValueZero();
+                BlocProvider.of<CounterCubit>(context).teamsValueZero();
               },
             ),
             const Spacer(),

@@ -38,7 +38,7 @@ class CustomTeamView extends StatelessWidget {
           ),
           onPressed: () {
             BlocProvider.of<CounterCubit>(context)
-                .TeamIncrement(team: nameTeam, buttonNumber: 1);
+                .teamIncrement(team: nameTeam, buttonNumber: 1);
           },
           child: const Text(
             "Add 1 Point",
@@ -58,7 +58,7 @@ class CustomTeamView extends StatelessWidget {
           ),
           onPressed: () {
             BlocProvider.of<CounterCubit>(context)
-                .TeamIncrement(team: nameTeam, buttonNumber: 2);
+                .teamIncrement(team: nameTeam, buttonNumber: 2);
           },
           child: const Text(
             "Add 2 Point",
@@ -78,7 +78,7 @@ class CustomTeamView extends StatelessWidget {
           ),
           onPressed: () {
             BlocProvider.of<CounterCubit>(context)
-                .TeamIncrement(team: nameTeam, buttonNumber: 3);
+                .teamIncrement(team: nameTeam, buttonNumber: 3);
           },
           child: const Text(
             "Add 3 Point",
